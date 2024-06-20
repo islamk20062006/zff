@@ -1,0 +1,854 @@
+:root {
+    --default-font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+
+body {
+    margin-left: 0;
+}
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: absolute;
+    width: 1880px;
+    height: 1024px;
+    margin: 0;
+    background: #f6f6f6;
+    overflow: hidden;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+  }
+  .flex-row-e {
+    position: absolute;
+    width: 1773px;
+    height: 1532px;
+    top: -940px;
+    left: -33px;
+  }
+  .ellipse {
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    top: 700px;
+    left: 10px;
+    right: 700px;
+    background: url(/img/Ellipse\ 7.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 5;
+  }
+  .ellipse-1 {
+    position: absolute;
+    width: 1300px;
+    height: 600px;
+    top: 661px;
+    left: 1113px;
+    background: url(/img/Ellipse\ 4.png)
+      no-repeat center;
+    background-size: contain;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  .converter-misgroup {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 377px;
+    height: 96px;
+    top: 955px;
+    left: 440px;
+    color: #000000;
+    font-family: MuseoModerno, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 31.8px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 44;
+  }
+  .frame {
+    position: absolute;
+    width: 34px;
+    height: 30px;
+    top: 957px;
+    left: 400px;
+    background: url(img/Ellipse\ 2.png)
+    no-repeat center;
+    background-size: auto;
+    z-index: 43;
+  }
+  .frame-1 {
+    position: absolute;
+    width: 34px;
+    height: 30px;
+    top: 967px;
+    left: 390px;
+    background: url(/img/Ellipse\ 1.png)
+    no-repeat center;
+    background-size: auto;
+    z-index: 43;
+  }
+  .rectangle {
+    position: absolute;
+    width: 552px;
+    height: 320px;
+    top: 1107px;
+    left: 550px;
+    font-size: 0px;
+    background: #ffffff;
+    z-index: 12;
+    border-radius: 25px;
+    box-shadow: 0 2.767px 2.214px 0 rgba(0, 0, 0, 0.02);
+  }
+  .amount {
+    display: block;
+    position: relative;
+    height: 33px;
+    top: 8px;
+    margin: 7px 0 0 64px;
+    color: #000000;
+    font-family: MuseoModerno, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 17;
+  }
+  .rectangle-2 {
+    position: relative;
+    width: 459px;
+    height: 142px;
+    margin: 31px 0 0 46px;
+    cursor: pointer;
+    background: #e3e3e3;
+    border: none;
+    z-index: 15;
+    border-radius: 30px;
+  }
+  .text-3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 94px;
+    top: 35px;
+    left: 27px;
+    color: #000000;
+    font-family: Amiko, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 85.376px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 16;
+  }
+  .polygon {
+    position: relative;
+    width: 87px;
+    height: 54px;
+    left: 38px;
+    top: 20px;
+    margin: 7px 0 0 356px;
+    transform: rotate(-180deg);
+    z-index: 24;
+    border-radius: 10px;
+    transform: scaleX(-1);
+  }
+  .rectangle-3 {
+    position: absolute;
+    width: 458px;
+    height: 70px;
+    top: 223px;
+    left: 47px;
+    background: #e3e3e3;
+    /* z-index: 21; */
+    border-radius: 10px;
+  }
+  .rub {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 65px;
+    top: 231px;
+    left: 64px;
+    color: #000000;
+    font-family: Inter, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58.091px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 18;
+  }
+  .rectangle-4 {
+    position: absolute;
+    top: 1107px;
+    left: 1000px;
+    background: #3c467d;
+    z-index: 30;
+    border-radius: 25px;
+    box-shadow: 0 1.965px 2.214px 0 rgba(0, 0, 0, 0.03);
+  }
+  .rectangle-5 {
+    position: absolute;
+    width: 379px;
+    height: 320px;
+    top: 0;
+    left: 175px;
+    background: #3c467d;
+    border-radius: 25px;
+    box-shadow: 0 1.965px 2.214px 0 rgba(0, 0, 0, 0.03);
+  }
+  .flex-row-ba {
+    position: relative;
+    width: 355px;
+    height: 150px;
+    margin: 13px 0 0 12px;
+    z-index: 39;
+  }
+  .rectangle-6 {
+    position: absolute;
+    width: 355px;
+    height: 140px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: #596399;
+    border: 0.4px solid rgba(255, 255, 255, 0.8);
+    z-index: 31;
+    border-radius: 20px;
+    box-sizing: content-box;
+  }
+  .rectangle-7 {
+    position: absolute;
+    width: 355px;
+    height: 140px;
+    top: 0;
+    left: 0;
+    background: #596399;
+    z-index: 37;
+    border-radius: 20px;
+    box-sizing: content-box;
+  }
+  .usd {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 329px;
+    height: 106px;
+    top: 44px;
+    left: 15px;
+    color: #ffffff;
+    font-family: Amiko, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53.36px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 33;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+  }
+  .usd-8 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 329px;
+    height: 106px;
+    top: 44px;
+    left: 15px;
+    color: #ffffff;
+    font-family: Amiko, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53.36px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 39;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+  }
+  .flex-row-container {
+    position: relative;
+    width: 355px;
+    height: 150px;
+    margin: -1px 0 0 12px;
+    z-index: 40;
+  }
+  .button-rectangle {
+    position: absolute;
+    width: 355.8px;
+    height: 140.8px;
+    top: -0.4px;
+    left: -0.4px;
+    cursor: pointer;
+    background: transparent;
+    background: no-repeat center;
+    background-size: cover;
+    border: none;
+    z-index: 32;
+  }
+  .rectangle-9 {
+    position: absolute;
+    width: 355.8px;
+    height: 140.8px;
+    top: 0;
+    left: 0;
+    background: url(img/Rectangle\ 9.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 38;
+  }
+  .rub-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 326px;
+    height: 106px;
+    top: 44px;
+    left: 15px;
+    color: #ffffff;
+    font-family: Amiko, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53.36px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 34;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+  }
+  .ellipse-b {
+    position: absolute;
+    width: 1150px;
+    height: 230px;
+    top: 1269px;
+    left: 1300px;
+    background: url(/img/Ellipse\ 6.png)
+      no-repeat center;
+    background-size: contain;
+    z-index: 2;
+  }
+  .ellipse-c {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 1442px;
+    left: 787px;
+    background: url(/img/Ellipse\ 3.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 7;
+    border-radius: 50%;
+  }
+  .arrow {
+    position: absolute;
+    height: 25px;
+    top: 1474px;
+    left: 835px;
+    background-size: cover;
+    z-index: 8;
+  }
+  .arrow-d {
+    position: absolute;
+    height: 25px;
+    top: 1478px;
+    left: 805px;
+    z-index: 9;
+  }
+  .line {
+    position: absolute;
+    width: 515px;
+    height: 4px;
+    top: 1485px;
+    left: 570px;
+    background: url(/img/Line\ 1.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 6;
+  }
+  .flex-row-b {
+    position: absolute;
+    width: 1960px;
+    height: 720px;
+    top: 426px;
+    left: -360px;
+    z-index: 41;
+  }
+  .ellipse-e {
+    position: absolute;
+    width: 720px;
+    height: 720px;
+    top: 0;
+    left: 0;
+    background: url(/img/Ellipse\ 5.png);
+      /* no-repeat center;
+    background-size: cover;
+    border-radius: 50%; */
+  }
+  .rectangle-f {
+    position: absolute;
+    width: 379px;
+    height: 321px;
+    top: 185px;
+    left: 1500px;
+    background: #3c467d;
+    z-index: 10;
+    border-radius: 25px;
+    box-shadow: 0 2.767px 2.214px 0 rgba(0, 0, 0, 0.02);
+  }
+  .rectangle-10 {
+    position: relative;
+    width: 355.8px;
+    height: 140.8px;
+    margin: 11.6px 0 0 11.6px;
+    background: url(/img/Rectangle\ 10.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 27;
+  }
+  .rectangle-11 {
+    position: absolute;
+    width: 355.8px;
+    height: 140.8px;
+    top: 170px;
+    left: 13px;
+    background: url(img/Rectangle\ 9.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 38;
+  }
+  .usd-12 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 332px;
+    height: 107px;
+    top: 202px;
+    left: 27px;
+    color: #ffffff;
+    font-family: Amiko, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53.36px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 42;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+  }
+  .rectangle-13 {
+    position: absolute;
+    width: 552px;
+    height: 320px;
+    top: 186px;
+    left: 885px;
+    background: #ffffff;
+    z-index: 20;
+    border-radius: 25px;
+    box-shadow: 0 2.767px 2.214px 0 rgba(0, 0, 0, 0.02);
+  }
+  .rectangle-14 {
+    position: relative;
+    width: 459px;
+    height: 142px;
+    margin: 75px 0 0 47px;
+    background: #e3e3e3;
+    z-index: 22;
+    border-radius: 30px;
+  }
+  .number {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 81px;
+    top: 30px;
+    left: 26px;
+    color: #000000;
+    font-family: Amiko, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 81px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 23;
+  }
+  .rectangle-15 {
+    position: absolute;
+    width: 458px;
+    height: 70px;
+    top: 230px;
+    left: 47px;
+    background: #e3e3e3;
+    z-index: 21;
+    border-radius: 10px;
+  }
+  .polygon-16 {
+    position: relative;
+    width: 87px;
+    height: 54px;
+    left: 38px;
+    top: 20px;
+    margin: 7px 0 0 356px;
+    transform: rotate(-180deg);
+    z-index: 24;
+    border-radius: 10px;
+    transform: scaleX(-1);
+  }
+  .usd-17 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 59px;
+    top: 237px;
+    left: 64px;
+    color: #000000;
+    font-family: Inter, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58.091px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 25;
+  }
+  .converted-to {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 46px;
+    top: 197px;
+    left: 950px;
+    color: #000000;
+    font-family: MuseoModerno, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 46px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 26;
+  }
+  .ellipse-18 {
+    position: absolute;
+    width: 1200px;
+    height: 350px;
+    top: 197px;
+    left: 1460px;
+    background: url(/img/Ellipse\ 9.png)
+    no-repeat center;
+    background-size: contain;
+    z-index: 3;
+  }
+  .rub-19 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 366px;
+    height: 103px;
+    top: 241px;
+    left: 1527px;
+    color: #ffffff;
+    font-family: Amiko, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53.36px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 41;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+  }
+  .ellipse-1a {
+    position: absolute;
+    width: 1300px;
+    height: 350px;
+    top: 311px;
+    left: 1351px;
+    background: url(/img/Ellipse\ 8.png)
+      no-repeat center;
+    background-size: contain ;
+    z-index: 4;
+  }
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 998px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 430px) and (max-height: 932px) {
+  .ellipse-e {
+    position: absolute;
+    width: 492px;
+    height: 250px;
+    top: 0px;
+    margin-top: 1000px;
+    left: -10px;
+    margin-left: 100px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background: url(/img/Ellipse\ 12.png);
+  }
+
+  .main-container {
+    position: absolute;
+    width: 1880px;
+    height: 3700px;
+    margin: 0;
+    background: #f6f6f6;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .ellipse {
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    top: 700px;
+    left: 10px;
+    right: 700px;
+    background: url()
+      no-repeat center;
+    background-size: cover;
+    z-index: 5;
+  }
+
+  .ellipse-1 {
+    position: absolute;
+    width: 1400px;
+    height: 500px;
+    top: 1000px;
+    left: 1120px;
+
+    background: url(/img/kruzhok.png)
+      no-repeat center;
+    background-size: contain;
+    z-index: 1;
+    border-radius: 50%;
+  }
+
+  .ellipse-b {
+    position: absolute;
+    width: 1150px;
+    height: 230px;
+    top: 1269px;
+    left: 1300px;
+    background: url()
+      no-repeat center;
+    background-size: contain;
+    z-index: 2;
+  }
+
+  .ellipse-18 {
+    position: absolute;
+    width: 1200px;
+    height: 350px;
+    top: 3000px;
+    left: 1460px;
+    background: url(/img/lenta\ 1.png)
+    no-repeat center;
+    background-size: 350px;
+    z-index: 3;
+  }
+
+  .ellipse-1a {
+    position: absolute;
+    width: 1300px;
+    height: 350px;
+    top: 2920px;
+    left: 1450px;
+    background: url(/img/lenta\ 2.png)
+      no-repeat center;
+    background-size: 300px;
+    z-index: 4;
+  }
+
+  .rectangle {
+    position: absolute;
+    width: 370px;
+    height: 250px;
+    top: 1107px;
+    left: 55px;
+    font-size: 0px;
+    background: #ffffff;
+    z-index: 12;
+    border-radius: 25px;
+    box-shadow: 0 2.767px 2.214px 0 rgba(0, 0, 0, 0.02);
+  }
+
+  .rectangle-2 {
+    position: relative;
+    width: 350px;
+    height: 80px;
+    margin: 31px 0 0 46px;
+    cursor: pointer;
+    background: #e3e3e3;
+    border: none;
+    z-index: 15;
+    border-radius: 30px;
+    left: -35px;
+    top: -10px;
+  }
+
+  .text-3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 90px;
+    top: 4px;
+    left: 30px;
+    color: #000000;
+    font-family: Amiko, var(--default-font-family);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 85.376px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 16;
+  }
+
+  .rectangle-3 {
+    position: absolute;
+    width: 350px;
+    height: 70px;
+    top: 160px;
+    left: 10px;
+    background: #e3e3e3;
+    /* z-index: 21; */
+    border-radius: 12px;
+  }
+
+  .polygon {
+    position: relative;
+    width: 80px;
+    height: 54px;
+    left: -95px;
+    top: 20px;
+    margin: 7px 0 0 356px;
+    transform: rotate(-180deg);
+    z-index: 24;
+    border-radius: 10px;
+    transform: scaleX(-1);
+  }
+
+  .rub {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 65px;
+    top: 165px;
+    left: 55px;
+    color: #000000;
+    font-family: Inter, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58.091px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 18;
+  }
+
+  .amount {
+    display: block;
+    position: relative;
+    height: 33px;
+    top: 8px;
+    left: -10px;
+    margin: 7px 0 0 64px;
+    color: #000000;
+    font-family: MuseoModerno, var(--default-font-family);
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 17;
+  }
+
+  .line {
+    position: absolute;
+    width: 360px;
+    height: 4px;
+    top: 1410px;
+    left: 65px;
+    background: url(/img/Line\ 1.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 6;
+  }
+
+  .ellipse-c {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 1365px;
+    left: 205px;
+    background: url(/img/Ellipse\ 3.png)
+      no-repeat center;
+    background-size: 75px;
+    z-index: 7;
+    border-radius: 50%;
+  }
+
+  .arrow-d {
+    position: absolute;
+    height: 25px;
+    top: 1400px;
+    left: 227px;
+    z-index: 9;
+  }
+
+  .arrow {
+    position: absolute;
+    height: 25px;
+    top: 1395px;
+    left: 250px;
+    background-size: cover;
+    z-index: 8;
+  }
+
+  .rectangle-13 {
+    position: absolute;
+    width: 370px;
+    height: 250px;
+    top: 186px;
+    left: 400px;
+    background: #ffffff;
+    z-index: 20;
+    border-radius: 25px;
+    box-shadow: 0 2.767px 2.214px 0 rgba(0, 0, 0, 0.02);
+  }
+}
+  /* Казиханов Ислам: Frontend: Верстка */
